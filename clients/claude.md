@@ -1,32 +1,33 @@
-# Install for Claude (Claude Code, Cowork, claude.ai)
+# Install for Claude
 
-This is the closest to true one-click, because Claude reads `SKILL.md`.
+Claude has two surfaces and they install **differently**. Pick the one you use.
 
-## Option A (recommended) — skills CLI
+## A. Claude Code (local, on your machine) — one command
 
 ```bash
 npx skills add SathiaAI/Session-Handshake
 ```
 
-This pulls the skill in `skills/session-handshake/`. If the CLI can't locate it, use Option B.
-
-## Option B — manual copy
-
-Copy the skill folder into your Claude skills directory:
+Pulls the skill from `skills/session-handshake/`. If the CLI can't locate it, clone and copy:
 
 ```bash
-# clone once
 git clone https://github.com/SathiaAI/Session-Handshake.git
-# then copy the skill into your personal skills dir
 cp -r Session-Handshake/skills/session-handshake ~/.claude/skills/
 ```
 
-For **Cowork / claude.ai**, add it as a custom skill in the skills UI (paste the contents of
-`skills/session-handshake/SKILL.md`).
+## B. Cowork & claude.ai (cloud sessions) — upload once
 
-## Trigger it
+**Important:** `npx skills add` does **not** reach Cowork — it installs to local filesystems
+only. Cowork cloud sessions read from your **claude.ai account skill library**, so upload the
+skill there once and every cloud session (and claude.ai chat) picks it up automatically.
 
-Just say:
+1. Download **`dist/session-handshake.zip`** from this repo — it's pre-packaged with the
+   `session-handshake/` folder as the zip's **root** (not nested), which is what claude.ai
+   requires. (Or zip the `skills/session-handshake/` folder yourself, same rule.)
+2. In claude.ai, go to **Customize → Skills → Add** and upload the zip.
+3. It now auto-loads in every Cowork session. No per-session setup.
+
+## Trigger it (either surface)
 
 > Run the session handshake.
 

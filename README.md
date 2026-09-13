@@ -26,6 +26,12 @@ brain** (the generator prompt) with **thin per-client triggers**. One prompt, ma
 | **Codex** (& AGENTS.md tools) | Add a section to `AGENTS.md` — see [`clients/codex-agents.md`](clients/codex-agents.md) | ⚡ Copy one section |
 | **Grok / Grokbot / Gemini / Muse / any** | Paste a prompt — see [`clients/universal-paste.md`](clients/universal-paste.md) | 📋 Paste (or save as a custom prompt) |
 
+> **⚠️ Cowork / claude.ai (cloud) works differently from Claude Code.** `npx skills add`
+> installs to *local* agents only — it does **not** reach Cowork cloud sessions. For those,
+> upload [`dist/session-handshake.zip`](dist/session-handshake.zip) once via **Customize →
+> Skills** in claude.ai; it then auto-loads in every session. Full steps in
+> [`clients/claude.md`](clients/claude.md).
+
 ---
 
 ## Quick start
