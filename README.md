@@ -1,11 +1,16 @@
 <div align="center">
 
-# 🤝 Session Handshake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+  <img src="assets/logo.svg" alt="Session Handshake logo" width="112">
+</picture>
+
+# Session Handshake
 
 ### Hand off a long AI session to a fresh one — on *any* client — without losing a thing.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-B5451F.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-D2691E.svg)](#-contributing)
 [![Stars](https://img.shields.io/github/stars/SathiaAI/Session-Handshake?style=social)](https://github.com/SathiaAI/Session-Handshake/stargazers)
 
 ![Claude](https://img.shields.io/badge/Claude-supported-6C5CE7)
